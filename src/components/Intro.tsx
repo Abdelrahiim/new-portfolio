@@ -46,8 +46,8 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.h1
+        className="mb-10 mt-4 px-4 text-justify text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -57,7 +57,7 @@ const Intro = () => {
         both front-end and back-end development, I craft dynamic web
         applications and robust APIs. Let's collaborate and build something
         great!
-      </motion.p>
+      </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
@@ -72,7 +72,7 @@ const Intro = () => {
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 hover:bg-gray-50 focus:scale-110 active:scale-105"
+          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110  focus:scale-110 active:scale-105 dark:bg-white/10"
           href={"/Abdelrahiim.pdf"}
           download
         >
@@ -81,14 +81,14 @@ const Intro = () => {
         </a>
         <a
           href="https://www.linkedin.com/in/abdelrhiim-abdelmoneim-23803716a/"
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-slate-900  outline-none transition hover:scale-[1.15]  hover:bg-gray-50 focus:scale-[1.15] active:scale-105"
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-slate-900  outline-none transition hover:scale-[1.15]  focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           target="_blank"
         >
           <BsLinkedin className="" />
         </a>
         <a
           href="https://github.com/Abdelrahiim"
-          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-slate-900  outline-none transition hover:scale-[1.15]  hover:bg-gray-50 focus:scale-[1.15] active:scale-105"
+          className="flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-slate-900  outline-none transition hover:scale-[1.15]  focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           target="_blank"
         >
           <BsGithub />
