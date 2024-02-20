@@ -2,11 +2,18 @@
 
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
+import { useInView } from "react-intersection-observer";
+import useActiveSectionStore from "~/context/activeSectionStore";
+import { useSectionInView } from "~/lib/hooks";
 
 const About = () => {
+  const { ref } = useSectionInView("About");
+
   return (
     <motion.section
+      // onClick={()=>setActiveSection("About")}
       id="about"
+      ref={ref}
       className="mb-28 max-w-[45rem] scroll-m-28 text-justify sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

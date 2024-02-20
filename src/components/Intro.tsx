@@ -4,13 +4,16 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useSectionInView } from "~/lib/hooks";
 /**
  * Renders the introductory section with personal information and contact links.
  *
  * */
 const Intro = () => {
+  const { ref } = useSectionInView("Home");
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[70rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
