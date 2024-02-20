@@ -62,7 +62,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Nike Clone",
-    description: "Nike Clone",
+    description: "A clone of the official website of the NIKE brand",
     tags: ["React", "MongoDB", "Tailwind"],
     imageUrl: NikeClone,
   },
@@ -74,7 +74,7 @@ export const projectsData = [
     imageUrl: Crypto,
   },
   {
-    title: "Word Analytics",
+    title: "Infinity Estate",
     description:
       "A Real State App that can help you find the best place for your next home.",
     tags: [

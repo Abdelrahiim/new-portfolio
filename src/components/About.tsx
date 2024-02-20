@@ -6,10 +6,11 @@ import SectionHeading from "./SectionHeading";
 const About = () => {
   return (
     <motion.section
-      id="#about"
-      className="mb-28 max-w-[45rem] text-justify sm:mb-40 "
-      initial={{ opacity: 0, y: 100 }} animate={{opacity:1 ,y:0}}
-      transition={{delay:.175}}
+      id="about"
+      className="mb-28 max-w-[45rem] scroll-m-28 text-justify sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3 ">
