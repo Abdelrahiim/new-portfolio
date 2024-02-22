@@ -19,6 +19,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.8.0",
+    "react-vertical-timeline-component": "^3.6.0",
+    "tailwind-merge": "^2.2.1",
     "zod": "^3.22.4",
     "zustand": "^4.5.1"
   },
@@ -27,6 +29,7 @@
     "@types/node": "^18.17.0",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "autoprefixer": "^10.4.14",

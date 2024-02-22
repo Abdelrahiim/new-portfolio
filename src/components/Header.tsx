@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { links } from "~/lib/data";
-import { clsx } from "clsx";
 import useActiveSectionStore from "~/context/activeSectionStore";
+import { cn } from "~/utils/cn";
 
 const Header = () => {
   const { activeSection, settimeOfLastClick, setActiveSection } =
@@ -30,7 +30,7 @@ const Header = () => {
                   setActiveSection(link.name);
                   settimeOfLastClick(Date.now());
                 }}
-                className={clsx(
+                className={cn(
                   "flex w-full justify-center px-3 py-3 transition hover:text-slate-950 dark:text-slate-500 dark:hover:text-slate-300",
                   {
                     "text-slate-950 dark:text-slate-200":

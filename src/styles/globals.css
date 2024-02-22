@@ -3,14 +3,27 @@
 @tailwind utilities;
 
 
-html {
+/* html {
   --line-color: #e5e7eb;
-}
+} */
 
-html.dark {
+html {
   --line-color: rgba(255, 255, 255, 0.2);
 }
 
 .borderBlack {
   @apply border border-black/10;
+}
+
+.custom-timeline-ring::after {
+  background-color: blue; /* Replace with your desired color */
+  content: '';
+  display: block;
+  width: 2px; /* Adjust width as needed */
+  height: 2px; /* Adjust height as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
