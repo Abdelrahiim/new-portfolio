@@ -5,12 +5,14 @@ import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "~/lib/hooks";
+import useActiveSectionStore from "~/context/activeSectionStore";
 /**
  * Renders the introductory section with personal information and contact links.
  *
  * */
 const Intro = () => {
   const { ref } = useSectionInView("Home");
+  const { setActiveSection, settimeOfLastClick } = useActiveSectionStore();
   return (
     <section
       ref={ref}
@@ -70,6 +72,10 @@ const Intro = () => {
         <Link
           className="group flex items-center gap-2 rounded-full bg-slate-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
           href={"#contact"}
+          onClick={() => {
+            setActiveSection("Contact");
+            settimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />

@@ -20,7 +20,6 @@ const Experience = () => {
         {experiencesData.map((item, index) => (
           <Fragment key={index}>
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
               visible={true}
               contentStyle={{
                 background: "rgba(255, 255, 255, 0.05)",
