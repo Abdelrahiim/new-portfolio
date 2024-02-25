@@ -52,11 +52,11 @@ const Intro = () => {
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-justify text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-center sm:text-justify text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Abdelrhiim</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Abdelrahim</span> I'm a{" "}
         <span className="font-bold">Full Stack Developer</span> specializing in{" "}
         <span className="underline">React and Node.js</span> With expertise in
         both front-end and back-end development, I craft dynamic web

@@ -9,9 +9,11 @@ import SectionHeading from "./SectionHeading";
 import { experiencesData } from "~/lib/data";
 import { useSectionInView } from "~/lib/hooks";
 import { Fragment } from "react";
+import { useThemeStore } from "~/context/themeStore";
 
 const Experience = () => {
   const { ref } = useSectionInView("Experience");
+  const { theme } = useThemeStore();
 
   return (
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
@@ -22,19 +24,24 @@ const Experience = () => {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: "rgba(255, 255, 255, 0.05)",
+                background:
+                  theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                 boxShadow: "none",
                 border: "1px solid rgba(0, 0, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
               contentArrowStyle={{
-                borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
+                borderRight:
+                  theme === "light"
+                    ? "0.4rem solid #9ca3af"
+                    : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
-              icon={item.icon}
               date={item.date}
+              icon={item.icon}
               iconStyle={{
-                background: "rgba(255, 255, 255, 0.05)",
+                background:
+                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                 fontSize: "1.5rem",
               }}
             >

@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import Crypto from "../../public/Crypto-wars.png";
 import InfinityEstate from "../../public/Infinity Estate.png";
 import NikeClone from "../../public/Nike-Clone.jpg";
+import AdminDashboard from "../../public/AdminDashboard.png";
 export const links = [
   {
     name: "Home",
@@ -86,6 +87,21 @@ export const projectsData = [
       "Meilisearch",
     ],
     imageUrl: InfinityEstate,
+  },
+  {
+    title: "Admin Dashboard",
+    description:
+      "A dashboard that can help you manage your customers, orders, and products.",
+    tags: [
+      "React",
+      "Redux",
+      "nivo",
+      "TypeScript",
+      "Material UI",
+      "Express js",
+      "MongoDB",
+    ],
+    imageUrl: AdminDashboard,
   },
 ] as const;
 

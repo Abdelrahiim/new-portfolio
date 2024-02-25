@@ -40,7 +40,7 @@ const Project: FC<ProjectProps> = ({ title, description, tags, imageUrl }) => {
           src={imageUrl}
           alt={title}
           quality={95}
-          className="sm:absolute sm:-right-40 sm:top-8 w-full sm:w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
+          className="absolute hidden sm:block sm:-right-40 sm:top-8 w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:-left-40 group-even:right-[initial] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2"
         />
       </section>
     </motion.div>

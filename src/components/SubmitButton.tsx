@@ -8,7 +8,7 @@ const SubmitButton = () => {
     <button
       type={"submit"}
       disabled={pending}
-      className="group flex h-[3rem] w-[8rem] items-center justify-center gap-2 rounded-full bg-slate-900 outline-none transition-all disabled:scale-100 disabled:bg-opacity-65 hover:scale-110 hover:bg-slate-950 focus:scale-110 active:scale-105 dark:bg-white dark:bg-opacity-10 dark:text-white"
+      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
     >
       {pending ? (
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
