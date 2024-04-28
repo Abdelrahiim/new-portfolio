@@ -56,7 +56,15 @@ export const experiencesData = [
     description:
       "I developed high-performing web apps using React, Node, and MongoDB. I also built back-end APIs using Node, Express, and MongoDB.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023- Present",
+    date: "2023- 2024",
+  },
+  {
+    title: "Junior Software Developer",
+    location: "Vultara Inc. Remote",
+    description:
+      "I developed high-performing web apps using Angular, Node, and MongoDB.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - Present",
   },
 ] as const;
 
@@ -111,6 +119,8 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Angular",
+  "Angular Material",
   "Next.js",
   "Node.js",
   "Git",
