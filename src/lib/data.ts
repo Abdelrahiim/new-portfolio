@@ -64,7 +64,15 @@ export const experiencesData = [
     description:
       "I developed high-performing web apps using Angular, Node, and MongoDB.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - Present",
+    date: "March 2024 - August 2024",
+  },
+  {
+    title: "Software Engineer",
+    location: "Vultara Inc. Remote",
+    description:
+      "Developed high-performance web apps using Angular, Node.js, and MongoDB. Provided technical guidance on best practices and problem-solving. Contributed to backend design, API integration, and project implementation.",
+    icon: React.createElement(CgWorkAlt),
+    date: "August 2024 - November 2024",
   },
 ] as const;
 
