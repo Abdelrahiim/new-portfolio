@@ -17,7 +17,7 @@ const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[70rem] scroll-mt-[100rem] text-center sm:mb-0"
+      className="mb-28 max-w-[65rem] scroll-mt-[100rem] text-center sm:mb-0"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -56,12 +56,12 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Abdelrahim</span> I'm a{" "}
-        <span className="font-bold">Full Stack Developer</span> specializing in{" "}
-        <span className="underline">React and Node.js</span> With expertise in
-        both front-end and back-end development, I craft dynamic web
-        applications and robust APIs. Let's collaborate and build something
-        great!
+        <span className="font-bold">Welcome to my portfolio!</span> I'm a{" "}
+        <span className="font-bold">Full Stack Developer</span> with a focus on{" "}
+        <span className="underline">React, Angular, Node.js, and NestJS</span>. 
+        With comprehensive skills in both front-end and back-end technologies, 
+        I develop seamless user experiences and efficient server-side solutions. 
+        Let's work together to create innovative projects and drive success!
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row"

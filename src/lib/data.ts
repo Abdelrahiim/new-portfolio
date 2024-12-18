@@ -6,6 +6,8 @@ import Crypto from "../../public/Crypto-wars.png";
 import InfinityEstate from "../../public/Infinity Estate.png";
 import NikeClone from "../../public/Nike-Clone.jpg";
 import AdminDashboard from "../../public/AdminDashboard.png";
+import { title } from "process";
+import { date } from "zod";
 export const links = [
   {
     name: "Home",
@@ -74,6 +76,14 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "August 2024 - November 2024",
   },
+  {
+    title: "Backend Engineer",
+    location: "Juthor Inc. Remote",
+    description:
+      "Developed a scalable, secure and efficient backend services for company's e-commerce platform. Participated in the integration of third-party APIs. Implemented authentication and authorization using JWT. Deployed the services using Docker and Azure.",
+    date: "December 2024 - Present",
+    icon: React.createElement(CgWorkAlt),
+  }
 ] as const;
 
 export const projectsData = [
